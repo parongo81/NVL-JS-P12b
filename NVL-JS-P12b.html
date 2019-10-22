@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>bucles II</title>
+	<script type="text/javascript">
+
+			function random(){
+				var impares=[];
+			 	var pares=[];
+				for (i = 0; i < 50; i++ ) {
+					var numeros = Math.floor((Math.random() * 100) +1);
+					document.write(numeros +", ");
+					console.log(numeros)
+						if (numeros %2==0){
+							pares.push(numeros);
+						}else{
+							impares.push(numeros);
+						} 				
+				}
+				document.write("<br>" + "Numeros pares= " + pares + "<br>");
+				document.write("Numeros impares= " + impares);
+				console.log(pares);
+				console.log(impares);
+			}
+	</script>
+</head>
+<body>
+	<input type="button" onclick="random()" value="VER NUMEROS!" />
+</body>
+</html>
